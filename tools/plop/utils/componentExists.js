@@ -7,10 +7,10 @@
 const fs = require('fs');
 const path = require('path');
 const pageComponents = fs.readdirSync(
-  path.join(__dirname, '../../../src/component'),
+  path.join(__dirname, '../../../src/components'),
 );
 const pageContainers = fs.readdirSync(
-  path.join(__dirname, '../../../src/container'),
+  path.join(__dirname, '../../../src/views'),
 );
 const components = pageComponents.concat(pageContainers);
 

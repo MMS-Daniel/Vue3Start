@@ -25,16 +25,10 @@ module.exports = {
     const actions = [
       {
         type: 'add',
-        path: '../../src/component/{{properCase name}}/index.js',
-        templateFile: './component/index.js.hbs',
+        path: '../../src/components/{{properCase name}}/index.vue',
+        templateFile: './component/index.vue.hbs',
         abortOnFail: true,
-      },
-      {
-        type: 'add',
-        path: '../../src/component/{{properCase name}}/wrap.js',
-        templateFile: './component/wrap.js.hbs',
-        abortOnFail: true,
-      },
+      }
     ];
 
     return actions;

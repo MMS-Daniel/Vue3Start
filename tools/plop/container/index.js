@@ -1,9 +1,7 @@
 const componentExists = require('../utils/componentExists');
 
-// import componentExists from '../utils/componentExists';
-
 module.exports = {
-  description: '添加一个 container , 一般用于模块，为多个单元组件的集合',
+  description: '添加一个 views , 一般用于模块，为多个单元组件的集合',
   prompts: [
     {
       type: 'input',
@@ -27,16 +25,10 @@ module.exports = {
     const actions = [
       {
         type: 'add',
-        path: '../../src/container/{{properCase name}}/index.js',
-        templateFile: './container/index.js.hbs',
+        path: '../../src/views/{{properCase name}}/index.vue',
+        templateFile: './container/index.vue.hbs',
         abortOnFail: true,
-      },
-      {
-        type: 'add',
-        path: '../../src/container/{{properCase name}}/wrap.js',
-        templateFile: './container/wrap.js.hbs',
-        abortOnFail: true,
-      },
+      }
     ];
 
     return actions;

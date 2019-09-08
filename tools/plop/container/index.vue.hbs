@@ -1,0 +1,39 @@
+/**
+ *
+ * {{ properCase name }}
+ *
+ */
+
+<template>
+  <div class="{{ properCase name }}-box">
+      <h1>Welcome {{ properCase name }} !</h1>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+  .{{ properCase name }}-box{
+         
+  }
+</style>
+
+<script>
+import Api from '@/api';
+export default {
+  name: 'Vue_{{ properCase name }}',
+  components: {
+    Welcome
+  },
+  data:()=>{
+    return {
+      pageName:"{{ properCase name }}"
+    }
+  },
+  created: function () {
+      
+  }
+}
+</script>
+
+
+
+
