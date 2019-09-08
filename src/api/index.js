@@ -7,7 +7,7 @@ axios.defaults.withCredentials = true;
 
 
 import * as Sentry from '@sentry/browser';
-Sentry.init({ dsn: 'https://814d2e32e255410bbe251487c886482a@sentry.io/1550805' });
+Sentry.init({    dsn: 'https://${Sentry密钥}@sentry.io/1550805' });
 
 // 相应拦截 在请求或响应被 then 或 catch 处理前拦截它们。
 axios.interceptors.response.use(
@@ -27,7 +27,7 @@ axios.interceptors.response.use(
 );
 
 // api名称
-const API_NAME = '/api-flow';
+const API_NAME = '/api-端';
 
 // 请求操作
 const doAxios =(method='GET',url,option) =>{
