@@ -9,11 +9,16 @@ Vue-cil3.0，单页面项目构建基础框架。
 - Vue-router
 - sass
 - ES6/7语法兼容
-
+- plop自助创建目录
 
 ## 安装依赖 ##
 
 	$ cnpm install
+
+## 新建目录 ##
+
+    $ npm run c
+
 
 ## 目录结构 ##
 
@@ -29,6 +34,7 @@ Vue-cil3.0，单页面项目构建基础框架。
     │   ├── css                # 样式
     │   ├── view/               #页面
     │   ├── components/         #组件库
+    ├── tools                     # plop设置
     ├── .env                      # 生产/开发通用环境变量
     ├── .env.analyz               # 可视化包管理
     ├── .env.cdn                  # cdn分包环境变量
@@ -59,8 +65,8 @@ vue-cil 图形化界面
 
     $ npm run build
 
-生产环境CDN分包模式
-    npm run build-cdn
+## 编译（生产环境CDN分包） ##
+    $ npm run build-cdn
 
 You can build projects directly for development. If you can help, please click Star.
 --------------------------------------------------------------------------------------
